@@ -32,7 +32,7 @@ jobs:
       uses: actions/upload-artifact@v4.3.6
       with:
         name: webapp
-        path: website/**
+        path: ${{env.DOTNET_ROOT}}/myapp
         if-no-files-found: warn
     - name: Download a Build Artifact
       uses: actions/download-artifact@v2
