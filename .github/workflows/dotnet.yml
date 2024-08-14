@@ -32,7 +32,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: webapp
-        path: ${{env.DOTNET_ROOT}}/myapp
+        path: website/**
         if-no-files-found: warn
    
    
